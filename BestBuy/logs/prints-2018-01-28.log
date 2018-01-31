@@ -1,0 +1,5 @@
+22:02:59.072 [main] INFO  com.mycompany.app.SearchProducts - Search results for iPad are returned
+22:03:53.672 [main] INFO  com.mycompany.app.SearchProducts - Browser has been invoked and link is open
+22:03:53.970 [main] INFO  com.mycompany.app.SearchProducts - Search text iPad has been entered in the text box
+22:03:58.955 [main] INFO  com.mycompany.app.SearchProducts - Search results for iPad are returned
+22:06:03.425 [main] INFO  com.mycompany.app.SearchProducts - Browser has been invoked and link is open

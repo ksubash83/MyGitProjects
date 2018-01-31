@@ -1,0 +1,6 @@
+21:16:47.523 [main] INFO  com.mycompany.app.SearchProducts - Clicked on add to cart button
+21:16:55.206 [main] INFO  com.mycompany.app.SearchProducts - Clicked on Check Out button
+21:20:46.898 [main] INFO  com.mycompany.app.SearchProducts - Implicit wait triggered
+21:20:53.477 [main] INFO  com.mycompany.app.SearchProducts - Browser has been invoked and link is open
+21:20:54.192 [main] INFO  com.mycompany.app.SearchProducts - Search text iPad has been entered in the text box
+21:20:58.901 [main] INFO  com.mycompany.app.SearchProducts - Search results for iPad are returned

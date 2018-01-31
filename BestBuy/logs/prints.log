@@ -1,0 +1,6 @@
+21:20:59.061 [main] INFO  com.mycompany.app.SearchProducts - Clicked on ipad pro link
+21:20:59.102 [main] INFO  com.mycompany.app.SearchProducts - Explicit wait triggered for clicking on wifi button
+21:21:02.036 [main] INFO  com.mycompany.app.SearchProducts - Clicked on wifi link
+21:21:02.070 [main] INFO  com.mycompany.app.SearchProducts - Explicit wait triggered for clicking on add to cart button
+21:21:02.229 [main] INFO  com.mycompany.app.SearchProducts - Clicked on add to cart button
+21:21:08.084 [main] INFO  com.mycompany.app.SearchProducts - Clicked on Check Out button
