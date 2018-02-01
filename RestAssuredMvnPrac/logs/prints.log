@@ -1,0 +1,14 @@
+01:33:40.356 [main] INFO  jirarestassured.ValidateJiraApi - Issue ID is: 10020
+01:33:40.363 [main] INFO  jirarestassured.ValidateJiraApi - End Create Issue
+01:36:15.300 [main] INFO  jirarestassured.ValidateJiraApi - Property file is loaded
+01:36:16.272 [main] INFO  jirarestassured.ValidateJiraApi - Start: Create Issue
+01:36:16.272 [main] INFO  jirarestassured.ValidateJiraApi - Host information: http://localhost:8080
+01:36:16.823 [main] INFO  jirarestassured.ValidateJiraApi - Response string is: {"id":"10021","key":"TES-22","self":"http://localhost:8080/rest/api/2/issue/10021"}
+01:36:16.832 [main] INFO  jirarestassured.ValidateJiraApi - Issue ID is: 10021
+01:36:16.832 [main] INFO  jirarestassured.ValidateJiraApi - End Create Issue
+01:55:03.234 [main] INFO  jirarestassured.ValidateJiraApi - Property file is loaded
+01:55:04.185 [main] INFO  jirarestassured.ValidateJiraApi - Start: Create Issue
+01:55:04.185 [main] INFO  jirarestassured.ValidateJiraApi - Host information: http://localhost:8080
+01:55:04.876 [main] INFO  jirarestassured.ValidateJiraApi - Response string is: {"id":"10022","key":"TES-23","self":"http://localhost:8080/rest/api/2/issue/10022"}
+01:55:04.882 [main] INFO  jirarestassured.ValidateJiraApi - Issue ID is: 10022
+01:55:04.882 [main] INFO  jirarestassured.ValidateJiraApi - End Create Issue
