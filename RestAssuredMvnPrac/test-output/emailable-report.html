@@ -31,14 +31,259 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">2.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">RestAPITest</td><td class="numi">3</td><td class="numi">3</td><td class="numi_attn">1</td><td class="numi_attn">3</td><td class="numi">4.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">basicspackage.AllElementsOfResponse</td><td><a href="#m1"><b>getAllElements</b>  </a></td><td class="numi">1</td><td>1517124871184</td><td class="numi">2680</td></tr>
+<tr><th colspan="4">RestAPITest &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">twitterrestassured.TwitterAPIPrac</td><td><a href="#m1"><b>getLatestTweet</b>  </a></td><td class="numi">1</td><td>1517545446241</td><td class="numi">924</td></tr>
+<tr class="failedeven"><td rowspan="2">basicspackage.Basics</td><td><a href="#m2"><b>getPlace</b>  </a></td><td class="numi">1</td><td>1517545449290</td><td class="numi">794</td></tr><tr class="failedeven"><td><a href="#m3"><b>postPlace</b>  </a></td><td class="numi">1</td><td>1517545450084</td><td class="numi">319</td></tr>
+<tr><th colspan="4">RestAPITest &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">basicspackage.Basics</td><td><a href="#m4"><b>deletePlace</b>  </a></td><td class="numi">1</td><td>1517545450405</td><td class="numi">0</td></tr>
+<tr><th colspan="4">RestAPITest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">jirarestassured.ValidateJiraApi</td><td><a href="#m5"><b>createIssue</b>  </a></td><td class="numi">1</td><td>1517545447165</td><td class="numi">673</td></tr><tr class="passedodd"><td><a href="#m6"><b>addComment</b>  </a></td><td class="numi">1</td><td>1517545447838</td><td class="numi">147</td></tr>
+<tr class="passedeven"><td rowspan="1">basicspackage.AllElementsOfResponse</td><td><a href="#m7"><b>getAllElements</b>  </a></td><td class="numi">1</td><td>1517545447985</td><td class="numi">1290</td></tr>
 </table>
-<h1>Default test</h1>
-<h2 id="m1">basicspackage.AllElementsOfResponse:getAllElements</h2>
+<h1>RestAPITest</h1>
+<h2 id="m1">twitterrestassured.TwitterAPIPrac:getLatestTweet</h2>
+<div style="padding-left:3em">
+<p>com/github/scribejava/core/builder/api/DefaultApi10a</p>
+io.restassured.internal.http.AuthConfig.oauth(AuthConfig.java:153)
+<br/>at io.restassured.internal.http.AuthConfig$oauth.call(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+<br/>at io.restassured.authentication.OAuthScheme.authenticate(OAuthScheme.groovy:35)
+<br/>at io.restassured.authentication.AuthenticationScheme$authenticate.call(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+<br/>at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1260)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+<br/>at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+<br/>at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+<br/>at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+<br/>at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+<br/>at io.restassured.filter.Filter$filter.call(Unknown Source)
+<br/>at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+<br/>at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+<br/>at io.restassured.filter.Filter$filter.call(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+<br/>at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+<br/>at io.restassured.filter.FilterContext$next.call(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+<br/>at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1722)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+<br/>at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+<br/>at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+<br/>at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1728)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+<br/>at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+<br/>at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+<br/>at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:168)
+<br/>at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+<br/>at twitterrestassured.TwitterAPIPrac.getLatestTweet(TwitterAPIPrac.java:35)
+<br/>25 lines not shown
+<p>Caused by com.github.scribejava.core.builder.api.DefaultApi10a</p>
+java.net.URLClassLoader.findClass(Unknown Source)
+<br/>at java.lang.ClassLoader.loadClass(Unknown Source)
+<br/>at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+<br/>at java.lang.ClassLoader.loadClass(Unknown Source)
+<br/>at io.restassured.internal.http.AuthConfig.oauth(AuthConfig.java:153)
+<br/>at io.restassured.internal.http.AuthConfig$oauth.call(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+<br/>at io.restassured.authentication.OAuthScheme.authenticate(OAuthScheme.groovy:35)
+<br/>at io.restassured.authentication.AuthenticationScheme$authenticate.call(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+<br/>at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1260)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+<br/>at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+<br/>at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+<br/>at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+<br/>at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+<br/>at io.restassured.filter.Filter$filter.call(Unknown Source)
+<br/>at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+<br/>at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+<br/>at io.restassured.filter.Filter$filter.call(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:141)
+<br/>at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+<br/>at io.restassured.filter.FilterContext$next.call(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+<br/>at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1722)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+<br/>at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+<br/>at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+<br/>at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1728)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+<br/>at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+<br/>at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+<br/>at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+<br/>at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:168)
+<br/>at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+<br/>at twitterrestassured.TwitterAPIPrac.getLatestTweet(TwitterAPIPrac.java:35)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">basicspackage.Basics:getPlace</h2>
+<div style="padding-left:3em">
+<p>1 expectation failed.
+JSON path results[0].geometry.location.lat doesn&apos;t match.
+Expected: 32.821457
+  Actual: 32.75549
+</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+<br/>at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+<br/>at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+<br/>at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+<br/>at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+<br/>at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+<br/>at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:265)
+<br/>at io.restassured.specification.ResponseSpecification$content$2.callCurrent(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:190)
+<br/>at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:248)
+<br/>at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
+<br/>at basicspackage.Basics.getPlace(Basics.java:44)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">basicspackage.Basics:postPlace</h2>
+<div style="padding-left:3em">
+<p>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+<br/>at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+<br/>at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+<br/>at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+<br/>at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+<br/>at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+<br/>at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+<br/>at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+<br/>at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+<br/>at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+<br/>at basicspackage.Basics.postPlace(Basics.java:66)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">basicspackage.Basics:deletePlace</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">jirarestassured.ValidateJiraApi:addComment</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">basicspackage.AllElementsOfResponse:getAllElements</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">jirarestassured.ValidateJiraApi:createIssue</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
